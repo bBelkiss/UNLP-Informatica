@@ -1,0 +1,300 @@
+CADP Teoría 3
+
+Estructura de control = conjunto mínimo de instrucciones.
+|
+|
+----> - read, write
+      - if, case
+      - while, repeat until
+      - for
+
+Programas en Pascal: {
+    Program nombre;
+    Const
+        ... (Constantes del programa)
+    módulos
+        ... (Se verá mas adelante)
+    var
+        ... (Variables del programa)
+    Begin (Inicialización)
+        ...
+    end. (Finalización)
+};
+
+Ejemplo de programa estructurado -> {
+    Program ejemplo;
+    Const (durante toda la ejecución, el valor se mantiene)
+        N = 25;
+        pi = 3,14;
+    var
+        edad: integer;
+        peso: real;
+        letra: char;
+        resultado: boolean;
+    Begin
+        edad := 5;
+        peso := 63,5;
+        edad := edad + N; (siendo 30 por Const)
+        leta := 'A';
+        resultado := letra = 'A'; (como A y a no son iguales, devuelve dato false (boolean definido en var))
+    end.
+};
+
+# PRE y POST CONDICIONES
+
+    - Pre-condición: La información que se conoce como verdadera ANTES de iniciar el programa (o módulo)
+    - Post-condición: La información que debería ser verdadera al concluír el programa (o módulo) si se cumplen
+                      adecuadamente los pasos especificados.
+
+    READ ---
+            |__ Operación que contienen la mayoría de los lenguajes de programación. Se utiliza para tomar datos
+                desde un dispositivo de entrada (por defecto el teclado) y asignarlos a las variables correspondientes.
+    
+    Asignación de valores {
+        Hasta ahora sabemos que para asignar un valor se utiliza := pero podemos utilizar la estructura
+        de control "read(x)"
+
+        Por ejemplo: {
+            var
+                suma, valor, edad: integer;
+            Begin
+                read(edad);     (el programa no avanzará hasta que se incluya un valor entero en la consola)
+                valor := 9;
+                suma := edad + valor;
+            end.
+        };
+    };
+
+    WRITE ---
+            |__ Operación que contienen la mayoría de los lenguajes de programación. Se utiliza para mostrar el
+                contenido de una variable.
+
+    Tiene 4 posibilidades = {
+        - Para enseñar solo texto: write("texto")
+        - Para enseñar solo una variable: write(variable)
+        - Para enseñar un conjunto de texto y variable: write("texto", variable)
+        - Para enseñar PEQUEÑAS operaciones: write(num + 4)
+    } ¿Como utilizarlo? {
+        var
+            cant: integer;
+        Begin
+            read(cant);
+            cant := cant + 1;
+            write(cant);
+        end.
+    }; 
+
+    SECUENCIA ---
+                 |__ Representada por una sucesión de operaciones (por ej. asignaciones) en la que el orden de
+                     ejecución coincide con el orden físico de aparición de las instrucciones.
+
+    Program sec;
+    var
+        num: integer;
+    Begin
+        read(num);
+        write(num);
+    end.
+
+    DECISIÓN ----
+       |          |__ Algorítmo representativo de un problema real cuando es necesario tomar decisiones en función de
+       |              los datos del problema.
+    IF/ELSE           La estructura básica se representa simbolicamente de esta manera:
+
+                                            Código anterior
+                                                   |
+                                                   |
+                                Verdadera <-- Condición --> Falsa
+                                   |                          |
+                                Acciones                   Acciones
+
+    Sintaxis:
+    (TIP sintaxis: la acción anterior a "else" NO lleva ";")
+
+    Cuando  el "else" tiene una acción si la cond es falsa {
+        if (condición) then
+            acción1
+        else
+            acción2;
+    } else {
+        Si en el "if" quiero más de una acción {
+            if (condición) then
+                begin
+                    acción1;
+                    acción2;
+                end
+            else
+                acción3
+        } else {
+            Si en ambas es más de una acción {
+                if (condición) then
+                    begin
+                        acción1;
+                        acción2;
+                    end
+                else
+                    begin
+                        acción1;
+                        acción2;
+                    end;
+            },
+        },
+    };
+
+    Ejemplo 3.0 = Realizar un programa que lea dos numeros enteros e informe si la suma de los mismos es mayor a 20.
+    Plantearme {
+        ¿Como leo un numero?
+        ¿Como veo si la suma es mayor a 20?
+        ¿Como muestro un resultado?
+    }
+    Resolución = Primer año\1er Cuatrimestre\CADP\Teorías\3.01Ej1.pas
+
+    Ejemplo 3.02 = Realizar un programa que lea un numero (suponga que > 0) y asigne el valor "10" si el numero es
+                  menor a 10; asigne "50" a la mísma variable si el numero es mayor  a 10 pero menor que 50; y asigne "100" si es mayor que 50.
+    Plantearme {
+        ¿Como leo un numero?
+        ¿Como verifico el rango?
+        ¿Como muestro el resultado?
+    }
+    Resolución = Primer año\1er Cuatrimestre\CADP\Teorías\3.01Ej2.pas
+
+    SELECCIÓN -----
+       |          |__ Permite realizar distintas acciones dependiendo del valor de una variable de tipo ordinal. La
+    CASE OF           estructura básica se representa simbolicamente así:
+
+                                            Código anterior
+                                                   |
+                                                   |
+                                Condición3 <-- Condición1 --> Condición2
+                                   |                |             |
+                                Acciones        Acciones       Acciones
+
+    Sintaxis:
+    case (variable) of 
+        condición1:
+            acción1;
+        condición2:
+            acción2;
+    end;
+
+    Ejemplo 3.03 = Realizar un programa que permita leer un caracter y al finalizar informe si se leyó un caracter
+                   mayúscula, minúscula, dígito o especial.
+    Plantearme {
+        ¿Que tipo de dato es?
+        ¿Como identifico que caracter es?
+    }
+    Resolución = Primer año\1er Cuatrimestre\CADP\Teorías\3.01Ej3.pas
+    * No olvidar {
+        - La variable del case debe ser de tipo simple/ordinal.
+        - Las opciones deben ser disjuntas (una mayuscula no puede ser minuscula a la vez)
+    }
+
+    ITERACIÓN ---
+                 |__ Puede ocurrir que se desee ejecutar un bloque de instrucciones desconociendo el numero exacto de
+                      veces que se ejecuta. Para esto, existe la iteración en la mayoría de los lenguajes de programación. Se clasifican en PRE y POST condicionales.
+
+    Iteración PRE condicional = Evalúan la condición y si es verdadera se ejecuta el bloque de acciones. Se puede
+        |                       ejecutar 0 (falsa, no se ejecuta), 1 (verdadera una vez) y/o mas veces.
+     WHILE DO                   Se representa simbolicamente de esta manera:
+
+                                            Código anterior
+                                                   |
+                                                   |
+                                Verdadera <-- Condición --> Falsa
+                                   |               |         |
+                                Acciones __________|       Acciones
+
+    Sintaxis: {
+    while (condición) do
+        acción;          
+    } mas de 1 {
+        while (condición) do
+            begin
+                acción1;
+                acción2;
+            end;
+    }
+
+    Ejemplo 3.04 = Realizar un programa que lea códigos de productos hasta leer un código igual a 30. Al finalizar
+                   informe sobre la cantidad de productos con código par.
+    Plantearme {
+        ¿Como leo un código?
+        ¿Como veo si es par? (DIV, MOD)
+        ¿Cual es la condición de fin?
+        ¿Como muestro el resultado?
+    }
+    Resolución = Primer año\1er Cuatrimestre\CADP\Teorías\3.01Ej4.pas
+    * No olvidar {
+        - Para que while funcione tiene que tener algo que evalue la condición.
+        - Si nunca leo otro producto, el while toma el primero y nunca finaliza.
+        - Utilizo while cuando NO se la cantidad de veces de lo que pida.
+    }
+
+    Iteración POST condicional = Ejecutan las acciones, luego evalúan la condición y ejecutan las acciones mientras
+        |                        la condición es falsa.
+    REPEAT UNTIL                 Se representa simbolicamente de esta manera:
+
+                                            Código anterior
+                                                   |
+                                                   |
+                                               Acciones_____________
+                                                   |                |  
+                                 Verdadera <-- Condición --> Falsa  |
+                                    |              |                |
+                                 Acciones          |________________|
+
+    Sintaxis: {
+        repeat
+            acción;
+        until (condición);
+        (no se utiliza begin/end si hay mas de 1)
+    }
+
+    Ejemplo 3.5 = Realizar un programa que lea códigos de productos hasta leer un código igual a 30. Al finalizar
+                   informe sobre la cantidad de productos con código par. El último DEBE procesarse.
+    Resolución = Primer año\1er Cuatrimestre\CADP\Teorías\3.01Ej5.pas
+    * No olvidar {
+        - Siempre pedirán cuando DEBA procesarse el último, de modo contrario, se asume que NO debe procesarse.
+        - Si hay más de una acción NO se agrega begin/end.
+    }
+
+    REPETICIÓN ----
+        |          |__ Extensión natural de la secuencia. Consiste en repetir N veces un bloque de acciones. Este N de
+       FOR             veces ya debe ser sabido de antemano.
+                       Se representa simbolicamente de la siguiente manera:
+
+                                            Código anterior
+                                                   |
+                                                   |
+                                  Sí <-- ¿Se repitió N veces? --> No
+                                   |               |              |  
+                              Otras acciones       |__________ Acciones
+
+    Sintaxis: {
+        for indice := valor_inicial to valor_final do
+            acción1;
+    } mas de 1 acción {
+        for indice := valor_inicial to valor_final do
+            begin
+                acción1;
+                acción2;
+            end;
+    }
+
+    Ejemplo 3.6 = a - Realizar un programa que lea precios de 10 productos que vende un almacén. Al finalizar, informe
+                      la suma de todos los precios.
+                  b - Consultar el precio del 5to producto.
+    Plantearme {
+        - ¿Que valor es el precio?
+        - ¿Cual es la condición de fin?
+        - ¿Como calculo la suma?
+    }
+    Resolución = a - Primer año\1er Cuatrimestre\CADP\Teorías\3.01Ej6.pas
+                 b - Primer año\1er Cuatrimestre\CADP\Teorías\3.01Ej6b.pas  
+    * No olvidar {
+        - La variable indice debe ser de tipo simple/ordinal.
+        - Nunca puede modificarse.
+        - Se incrementa/decrementa sola.
+        - Cuando el for termina, no toma ningun valor (ni el último)
+        - Si se necesita de menor a mayor, el TO cambia a DOWNTO.
+    }
