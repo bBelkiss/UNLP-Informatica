@@ -1,4 +1,4 @@
-CADP Teoría 3
+CADP Teoría 2
 
 Estructura de control = conjunto mínimo de instrucciones.
 |
