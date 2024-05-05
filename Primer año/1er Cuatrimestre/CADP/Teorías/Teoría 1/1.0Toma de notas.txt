@@ -1,4 +1,4 @@
-CADP Teoría 2
+CADP Teoría 1
 
 # Tipos de datos
 
