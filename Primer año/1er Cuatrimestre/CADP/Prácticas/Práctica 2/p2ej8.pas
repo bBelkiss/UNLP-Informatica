@@ -20,12 +20,12 @@ begin
         writeln(‘Se trata de una mayúscula’);
 end;
 var
-ok : boolean;
+    ok : boolean;
 begin 
     leer;
     ok := analizarLetra;
     if ok then
-        writeln(‘Gracias, vuelva prontosss’);
+        writeln(‘Gracias, vuelva pronto’);
 end
 
 { a) La función analizarLetra fue declarada como un submódulo dentro del procedimiento leer. Pero esto
