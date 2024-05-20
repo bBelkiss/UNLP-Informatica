@@ -38,15 +38,15 @@ type
 		cantMicroMax1, cantMicroMax2, cantMicros, cantMulticoreIAMD: integer;
 		marcaMax1, marcaMax2: string;
 	begin
-	cantMulticoreIAMD:= 0;
-	cantMicroMax1:= -1;
-	cantMicroMax2:= -1;
-	leermicros(micros);
+		cantMulticoreIAMD:= 0;
+		cantMicroMax1:= -1;
+		cantMicroMax2:= -1;
+		leermicros(micros);
 	while(micros.nucleo <> 0) do begin
 		if ((micros.marca = 'Intel') OR (micros.marca = 'AMD')) AND (micros.nucleo > 1) AND (micros.vel_reloj >= 2) then
 			cantMulticoreIAMD:= cantMulticoreIAMD + 1;
 		cantMicros:= 0;
-		if (micros.nucleo > 2) AND (micros.tam_trans > 22)then
+		if (micros.nucleo > 2) AND (micros.tam_trans > 22) then
 			writeln('Marca: ',micros.marca,' Linea: ',micros.linea,' tiene mas de 2 cores con transitores mayor a 22nm');
 		if (micros.tam_trans = 14) then
 			cantMicros:= micros.nucleo;
