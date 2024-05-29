@@ -9,7 +9,7 @@ Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Inf
 **Primer año**
 - [CADP](1er-Año\1er-Cuatrimestre\CADP): Archivos relacionados con la materia de CADP
 - [OC](1er-Año\1er-Cuatrimestre\OC): Archivos relacionados con la materia OC
-- [MAT0](1er-Año\1er-Cuatrimestre\MAT0): Archivos relacionados con la materia MATE0
+- [MAT1](1er-Año\1er-Cuatrimestre\MAT0): Archivos relacionados con la materia MATE 1
 
 ## Contribuciones
 
