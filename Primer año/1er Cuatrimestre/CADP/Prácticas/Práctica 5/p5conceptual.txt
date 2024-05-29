@@ -1,0 +1,18 @@
+PARTE CONCEPTUAL
+
+1. ¿Qué se define como memoria estática?
+2. ¿Qué se define como memoria dinámica?
+3. ¿Qué es una variable de tipo puntero?
+4. ¿Qué hace la operación “NEW” aplicada en una variable del tipo puntero?
+5. ¿Qué hace la operación “DISPOSE” aplicada en una variable del tipo puntero?
+
+1- Se refiere a la asignación de memoria durante la compilación del programa. Las variables de memoria estática se reservan durante la fase de compilación y su tamaño no cambia durante la ejecución del programa. Esto significa que el espacio de memoria necesario para las variables está determinado antes de que se ejecute el programa y permanece constante durante toda la ejecución.
+
+2- Se refiere a la asignación de memoria durante la ejecución del programa. Permite alocar y liberar memoria en tiempo de ejecución según sea necesario. Esto es útil cuando el tamaño de los datos no se conoce hasta que el programa se está ejecutando o cuando la cantidad de datos puede cambiar dinámicamente durante la ejecución.
+Variable de tipo puntero:
+
+3- Una variable de tipo puntero es una variable que almacena la dirección de memoria de otra variable. En lugar de contener directamente un valor, almacena la dirección de memoria donde se encuentra almacenado el valor.
+
+4- La operación NEW se utiliza para asignar memoria dinámicamente para un tipo de datos específico en tiempo de ejecución. Cuando se aplica NEW a una variable de tipo puntero, se reserva espacio en memoria para el tipo de datos al que apunta el puntero y se devuelve la dirección de memoria de la nueva área reservada.
+
+5- La operación DISPOSE se utiliza para liberar la memoria asignada dinámicamente a través de la operación NEW. Al aplicar DISPOSE a una variable de tipo puntero, se libera la memoria asociada con la variable a la que apunta el puntero y se marca como disponible para su reutilización.
