@@ -72,7 +72,7 @@ begin
     nue^.sig:=pri;
     pri:=nue;
 end;
-recorrerLista (pri:lista;var vc:vec_espectro; duracProm,costoPromedio:real);
+procedure recorrerLista (pri:lista;var vc:vec_espectro; duracProm,costoPromedio:real);
 var
     max:real; nombreCostosa:cadena15;
     ln:lista_nombre;
