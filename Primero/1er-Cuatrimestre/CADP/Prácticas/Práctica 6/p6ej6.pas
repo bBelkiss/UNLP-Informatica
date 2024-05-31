@@ -63,7 +63,7 @@ begin
     end;
         
 end;
-procedure agregarAdelante(var pri:lista_nombre; nom:cadena15);
+procedure agregarAdelanteNombre(var pri:lista_nombre; nom:cadena15);
 var
     nue:lista_nombre;
 begin
