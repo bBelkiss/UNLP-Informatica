@@ -102,18 +102,16 @@ begin
 end;
 procedure leerSonda(var s:sonda);
 begin
-    with s do begin
         writeln('Nombre:');
-        readln(nombre);
+        readln(s.nombre);
         writeln('Duración estimada de la misión:');
-        readln(duracEstimada);
+        readln(s.duracEstimada);
         writeln('Costo de construcción:');
-        readln(costoConstruc);
+        readln(s.costoConstruc);
         writeln('Costo de mantenimiento mensual:');
-        readln(costoMantenMens);
+        readln(s.costoMantenMens);
         writeln('Rango del espectro electromagnetico:');
-        readln(rango);
-    end;
+        readln(s.rango);
 end;
 procedure generarLista(var pri:lista;var promedio:real; costoPromedio:real);
 var
