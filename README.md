@@ -7,9 +7,9 @@ Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Inf
 - [STATUS](Materias-Status.pdf): Estado en tiempo real de las materias que voy rindiendo.
 
 **Primer año**
-- [CADP](1er-Año\1er-Cuatrimestre\CADP): Archivos relacionados con la materia de CADP
-- [OC](1er-Año\1er-Cuatrimestre\OC): Archivos relacionados con la materia OC
-- [MAT1](1er-Año\1er-Cuatrimestre\MAT0): Archivos relacionados con la materia MATE 1
+- [CADP](Primero/1er-Cuatrimestre/CADP): Archivos relacionados con la materia de CADP
+- [OC](Primero/1er-Cuatrimestre/OC): Archivos relacionados con la materia OC
+- [MAT1](Primero/1er-Cuatrimestre/MAT1): Archivos relacionados con la materia MATE 1
 
 ## Contribuciones
 
