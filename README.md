@@ -5,6 +5,7 @@ Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Inf
 ## Contenido 📚
 **Extras**
 - [STATUS](Materias-Status.pdf): Estado en tiempo real de las materias que voy rindiendo.
+- [EJEMPLOS](Ejemplos): Ejemplos de sintaxis y su uso.
 
 **Primer año**
 - [CADP](1_Primero/1er-Cuatrimestre/CADP): Archivos relacionados con la materia de CADP
