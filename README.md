@@ -8,9 +8,9 @@ Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Inf
 - [EJEMPLOS](Ejemplos): Ejemplos de sintaxis y su uso.
 
 **Ingreso**
-- [EPA](0_Ingreso\EPA): Material de EPA
-- [COC](0_Ingreso\COC): Material de COC
-- [MAT0](0_Ingreso\MAT0): Material de MAT0
+- [EPA](0_Ingreso/EPA): Material de EPA
+- [COC](0_Ingreso/COC): Material de COC
+- [MAT0](0_Ingreso/MAT0): Material de MAT0
 
 **Primer año**
 - [CADP](1_Primero/1er-Cuatrimestre/CADP): Archivos relacionados con la materia de CADP
