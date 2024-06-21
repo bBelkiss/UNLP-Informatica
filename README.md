@@ -14,9 +14,9 @@ Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Inf
 - [MAT0](0_Ingreso/MAT0): Material de MAT0
 
 **Primer año**
-- [CADP](1_Primero/1er-Cuatrimestre/CADP): Archivos relacionados con la materia de CADP
-- [OC](1_Primero/1er-Cuatrimestre/OC): Archivos relacionados con la materia OC
-- [MAT1](1_Primero/1er-Cuatrimestre/MAT1): Archivos relacionados con la materia MATE 1
+- [CADP](1_Primero/1er-Semestre/CADP): Archivos relacionados con la materia de CADP
+- [OC](1_Primero/1er-Semestre/OC): Archivos relacionados con la materia OC
+- [MAT1](1_Primero/1er-Semestre/MAT1): Archivos relacionados con la materia MATE 1
 
 ## Instalación de R-Info 🤖
 **Para Windows**
