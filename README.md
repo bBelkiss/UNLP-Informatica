@@ -2,12 +2,12 @@
 
 Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Informática_ en la Universidad Nacional de La Plata (UNLP). Adjuntaré una recopilación de notas, materiales de estudio, prácticas y demás relacionados con los diferentes cursos y materias de la carrera.
 
-*Last updated: 28-06-2024*
+*Last updated: 01-07-2024*
 ## Contenido 📚
 **Extras**
 - [STATUS](Materias-Status.pdf): Estado en tiempo real de las materias que voy rindiendo.
 - [EJEMPLOS](Ejemplos): Ejemplos de sintaxis y su uso.
-- [R-INFO](R-Info) Instalación de R-Info (instrucciones mas abajo)
+- [R-INFO](Utilidad\R-Info) Instalación de R-Info (instrucciones mas abajo)
 
 **Ingreso**
 - [EPA](0_Ingreso/EPA): Material de EPA
