@@ -7,7 +7,7 @@ Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Inf
 **Extras**
 - [STATUS](Materias-Status.pdf): Estado en tiempo real de las materias que voy rindiendo.
 - [EJEMPLOS](Ejemplos): Ejemplos de sintaxis y su uso.
-- [R-INFO](Utilidad\R-Info) Instalación de R-Info (instrucciones mas abajo)
+- [R-INFO](Utilidad/R-Info) Instalación de R-Info (instrucciones mas abajo)
 
 **Ingreso**
 - [EPA](0_Ingreso/EPA): Material de EPA
