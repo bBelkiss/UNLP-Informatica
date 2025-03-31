@@ -1,0 +1,31 @@
+{ Diferencia entre FOR, WHILE y UNTIL (// comentarios) }
+
+
+for i := 1 to 100 do // i: varible, 1: valor 1, 100: valor 2
+    begin
+    readln(N)
+        if (N...) then
+      readln(N)
+    end
+
+For se utiliza cuando ya sabes la cantidad.
+
+/////////////////////////////////////////////////////////////
+
+readln(N) // Unica forma donde se lee el valor ANTES y DESPUES (post y pre condición)
+while (N...) do
+    begin
+        if (N...) then...
+      readln(N)
+    end
+
+While se utiliza cuando el último valor NO debe procesarse.
+
+/////////////////////////////////////////////////////////////
+
+repeat
+    readln(N)
+    if (N...) then...
+until (N...)
+
+Repeat se utiliza cuando el último valor SI debe procesarse.
