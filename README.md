@@ -5,7 +5,8 @@ Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Inf
 *Last updated: 31-03-25*
 ## Contenido 📚
 **Extras**
-- [R-INFO](Utilidad) Instalación de R-Info (instrucciones mas abajo)
+- [R-INFO](Utilidad/R-Info) Instalación de R-Info (instrucciones mas abajo)
+- [CADP_Codigos](Utilidad/CADP_Codigos) Procedimientos y funciones útiles para la materia
 
 **Ingreso**
 - [EPA](0_Ingreso/EPA): Material de EPA
