@@ -2,11 +2,12 @@
 
 Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Informática_ en la Universidad Nacional de La Plata (UNLP). Adjuntaré una recopilación de notas, materiales de estudio, prácticas y demás relacionados con los diferentes cursos y materias de la carrera.
 
-*Last updated: 18-06-25*
+*Last updated: 25-08-25*
 ## Contenido 📚
 **Extras**
 - [R-INFO](Utilidad/R-Info) Instalación de R-Info (instrucciones mas abajo)
 - [CADP_Codigos](Utilidad/CADP_Codigos) Procedimientos y funciones útiles para la materia
+- [Vonsim](Utilidad/Vonsim) Documentación y Enlaces directos para Vonsim
 
 **Ingreso**
 - [EPA](0_Ingreso/EPA): Material de EPA
