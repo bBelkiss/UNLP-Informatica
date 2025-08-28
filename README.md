@@ -8,16 +8,20 @@ Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Inf
 - [R-INFO](Utilidad/R-Info) Instalación de R-Info (instrucciones mas abajo)
 - [CADP_Codigos](Utilidad/CADP_Codigos) Procedimientos y funciones útiles para la materia
 - [Vonsim](Utilidad/Vonsim) Documentación y Enlaces directos para Vonsim
+- [Ingles](Ingles) Prácticas y ejemplos de finales para rendir Taller y Lecto-comprensión de Inglés libre
 
 **Ingreso**
 - [EPA](0_Ingreso/EPA): Material de EPA
 - [COC](0_Ingreso/COC): Material de COC
-- [MAT0](0_Ingreso/MATE_0): Material de MAT0
+- [MAT0](0_Ingreso/MATE_0): Material de MAT 0
 
 **Primer año**
 - [CADP](1_Primero/1_Semestre/CADP): Archivos relacionados con la materia de CADP
 - [OC](1_Primero/1_Semestre/OC): Archivos relacionados con la materia OC
 - [MAT1](1_Primero/1_Semestre/MATE_1): Archivos relacionados con la materia MATE 1
+- [TALLER](1_Primero/2_Semestre/TALLER): Archivos relacionados con la materia TALLER DE PROGRAMACIÓN
+- [ARQUITECTURA](1_Primero/2_Semestre/ARQUITECTURA): Archivos relacionados con la materia ARQUITECTURA DE COMPUTADORAS
+- [MAT2](1_Primero/2_Semestre/MATE_2): Archivos relacionados con la materia MATE 2
 
 ## Instalación de R-Info 🤖
 **Para Windows**
