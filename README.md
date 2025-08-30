@@ -2,7 +2,7 @@
 
 Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Informática_ en la Universidad Nacional de La Plata (UNLP). Adjuntaré una recopilación de notas, materiales de estudio, prácticas y demás relacionados con los diferentes cursos y materias de la carrera.
 
-*Last updated: 26-08-25*
+*Last updated: 30-08-25*
 ## Contenido 📚
 **Extras**
 - [R-INFO](Utilidad/R-Info) Instalación de R-Info (instrucciones mas abajo)
