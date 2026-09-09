@@ -1,0 +1,13 @@
+A) Uso de la pila ⭐ Si el registro SP vale 8000h al comenzar  el programa, indicar el valor del registro SP luego de 
+ejecutar cada una de las instrucciones de la tabla, en el orden en que aparecen. Indicar, de la misma forma, los 
+valores de los registros AX y BX. 
+   
+Instrucción   Valor del registro SP   AX   BX 
+1  mov ax, 5       8000h              5    ? 
+2  mov bx, 3       8000h              5    3
+3  push ax         7FFEH              5    3
+4  push ax         7FFCH              5    3
+5  push bx         7FFAH              5    3
+6  pop bx          7FFCH              5    3
+7  pop bx          7FFEH              5    5
+8  pop ax          8000h              5    5

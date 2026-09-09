@@ -3,13 +3,14 @@
 ; MENSAJE contiene “Hola, Buenas Tardes”, entonces CANT debe valer 3.
 
 ORG 1000H
-MSG DB "hola buenas"
+MSG   DB "hola buenas"
+FIN   DB ?
 LETRA DB 'a'
-CANT DB ?
+CANT  DB ?
 
 ORG 2000H
 MOV BX, OFFSET MSG
-MOV AL, OFFSET LETRA - OFFSET MSG
+MOV AL, OFFSET FIN - OFFSET MSG
 MOV DL, LETRA
 MOV DH, 0
 SEGUIR: MOV AH, [BX]

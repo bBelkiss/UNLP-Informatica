@@ -1,0 +1,18 @@
+B) Llamadas a subrutinas y la pila ⭐ Si el registro SP vale 8000h al comenzar  el programa, indicar el valor del 
+registro SP luego de ejecutar cada instrucción. Considerar que el programa comienza a ejecutarse con el IP en la 
+dirección 2000h, es decir que la primera instrucción que se ejecuta es la de la línea 5 (push ax). 
+Nota: Las sentencias ORG y END no son instrucciones sino indicaciones al compilador, por lo tanto no se ejecutan.  
+
+
+
+Dirección   Instrucción             Valor del registro SP 
+    —----   org 3000h               ----- 
+    3000h   rutina: mov bx,3        7FFCH  
+    3004h   ret                     7FFEH
+    —----   org 2000h               ----- 
+    2000h   push ax                 7FFEH
+    2001h   call rutina             7FFCH
+    2004h   pop bx                  8000H
+    2005h   hlt                     8000H
+    —----   end                     -----  
+
