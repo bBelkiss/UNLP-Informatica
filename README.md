@@ -35,4 +35,4 @@ Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Inf
 
 ## Contribuciones 💡
 
-Si deseas contribuir con material adicional, abri un _pull request_ _🌱
+Si deseas contribuir con material adicional, abri un _pull request_ 🌱
