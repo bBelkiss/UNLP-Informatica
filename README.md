@@ -1,5 +1,5 @@
 # UNLP Informatica 👨‍💻
-*Last updated: 09-09-26*
+*Last updated: 27-10-26*
 
 Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Informática_ en la Universidad Nacional de La Plata (UNLP). Adjuntaré una recopilación de notas, materiales de estudio, prácticas y demás relacionados con los diferentes cursos y materias de la carrera.
 
@@ -8,6 +8,7 @@ Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Inf
 - [R-INFO](Utilidad/R-Info) Instalación de R-Info (instrucciones mas abajo)
 - [CADP_Codigos](Utilidad/CADP_Codigos) Procedimientos y funciones útiles para la materia
 - [Vonsim](Utilidad/Vonsim) Documentación y Enlaces directos para Vonsim
+- [WINMIPS](Utilidad/Winmips) Documentación y Enlaces directos para WINMIPS
 - [Ingles](Ingles) Prácticas y ejemplos de finales para rendir Taller y Lecto-comprensión de Inglés libre
 
 **Ingreso**
@@ -29,10 +30,20 @@ Este repositorio está dedicado a mi paso por la carrera de _Licenciatura en Inf
 
 **Para Linux**
 > Para ejecutarlo vamos a trabajar desde la consola, para iniciarla podes hacerlo con `Ctrl+Alt+t`.
->
 > - Primero es necesario instalar la maquina virtual de java JRE o Java Runtime Enviroment que provee todas las dependencias necesarias para ejecutar una aplicación java, esto lo pueden hacer ejecutando `sudo apt install default-jre` para ubuntu o debian, si tenes otra distro te recomiendo que busques como instalar la misma en tu SO.
 > - Para ejecutar la aplicación hay que darle permisos de ejecución con el comando `chmod +x Rinfo-2.8-linux.jar` después de esto esta listo para ejecutarlo y eso se hace desde consola con `java -jar Rinfo-2.8-linux.jar`
 
-## Contribuciones 💡
+## Instalación de WINMIPS 🤖
+**Para Windows**
+> - Basta con instalar el archivo `winmips64.exe` haciendo doble click sobre el mismo
+> - Al abrir WinMIPS64 por primera vez, se crearán automáticamente dos archivos en la misma carpeta: `winmips64.ini`, que guarda la configuración de la arquitectura, y `winmips64.las`, que recuerda el último archivo `.s` utilizado
 
+**Si lo instalás en una unidad de red**
+> - Guardá `winmips64.exe` en una carpeta del sistema adecuada
+> - Creá un archivo llamado `winmips64.pth` en esa misma carpeta utilizando un editor de texto
+> - Dentro del archivo, escribí en una sola línea la ruta de una carpeta en la que los usuarios tengan permisos de escritura. Por ejemplo, `H:` o `C:\temp`
+> - Guardá el archivo sin agregar un salto de línea al final. Este archivo debe ser de solo lectura
+> La carpeta indicada se utilizará para guardar los archivos de configuración personales (`.ini` y `.las`) de cada usuario
+
+## Contribuciones 💡
 Si deseas contribuir con material adicional, abri un _pull request_ 🌱
